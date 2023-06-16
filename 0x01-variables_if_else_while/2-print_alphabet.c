@@ -1,18 +1,15 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
 int main(void)
 {
-	char letter;
+    char start = 'a';
+    char end = 'z';
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
+    while (start <= end)
+    {
+        putchar(start++);
+    }
+    putchar('\n');
 
-	putchar('\n');
-
-	return 0;
+    return (0);
 }
