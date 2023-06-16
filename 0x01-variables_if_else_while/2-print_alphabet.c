@@ -1,21 +1,18 @@
-Here is one possible solution for your task:
-
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase, followed by a new line
+ * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char c;
+	char letter;
 
-    c = 'a';
-    while (c <= 'z')
-    {
-        putchar(c);
-        c++;
-    }
-    putchar('\n');
-    return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
+
+	return 0;
 }
