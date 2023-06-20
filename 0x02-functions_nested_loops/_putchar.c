@@ -1,3 +1,13 @@
-#include "main.h"
+#include <unistd.h>
 
-/* Define the _putchar function here if necessary */
+/**
+ * _putchar - Writes a character to stdout
+ * @c: The character to be written
+ *
+ * Return: On success, return the character written.
+ * On error, -1 is returned.
+ */
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
