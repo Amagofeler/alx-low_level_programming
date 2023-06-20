@@ -1,18 +1,16 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- * main - prints _putchar. followed by another line
- * Return: 0 if Successful
- */
 int main(void)
 {
-	char s[] = "_putchar\n";
-    	int i = 0;
+    putchar('_');
+    putchar('p');
+    putchar('u');
+    putchar('t');
+    putchar('c');
+    putchar('h');
+    putchar('a');
+    putchar('r');
+    putchar('\n');
 
-	while (s[i])
-	{
-		_putchar(s[i])
-		i++;
-	]
-    	return 0;
+    return (0);
 }
