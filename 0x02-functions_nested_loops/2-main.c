@@ -1,12 +1,14 @@
 #include "main.h"
+#include <unistd.h> // Include the <unistd.h> header for the write function
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
+
 int main(void)
 {
-	print_alphabet_x10();
-	return (0);
+    print_alphabet_x10();
+    return 0;
 }
+
