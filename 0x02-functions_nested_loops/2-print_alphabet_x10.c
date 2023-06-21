@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 
-int _putchar(char c);
+int custom_putchar(char c);
 
 /**
  * print_alphabet_x10 - Prints the alphabet in lowercase 10 times
@@ -9,22 +9,21 @@ int _putchar(char c);
 void print_alphabet_x10(void)
 {
     int i;
+    char letter;
 
     for (i = 0; i < 10; i++)
     {
-        char letter = 'a';
-
+        letter = 'a';
         while (letter <= 'z')
         {
-            _putchar(letter);
+            custom_putchar(letter);
             letter++;
         }
-
-        _putchar('\n');
+        custom_putchar('\n');
     }
 }
 
-int _putchar(char c)
+int custom_putchar(char c)
 {
     return write(1, &c, 1);
 }
