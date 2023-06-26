@@ -2,23 +2,23 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 12
+#define PASSWORD_LENGTH 15
 
 int main(void)
 {
-    char password[PASSWORD_LENGTH + 1]; /* +1 for the null terminator */
+    char password[PASSWORD_LENGTH + 1];
     int i;
 
     srand(time(NULL));
 
     for (i = 0; i < PASSWORD_LENGTH; i++)
     {
-        password[i] = rand() % 94 + 33; /* Generate random printable ASCII characters */
+        password[i] = rand() % 94 + 32; /* Generate random printable ASCII characters */
     }
 
-    password[PASSWORD_LENGTH] = '\0'; /* Add the null terminator */
+    password[PASSWORD_LENGTH] = '\0';
 
-    printf("%s", password);
+    printf("%s\n", password);
 
     return 0;
 }
