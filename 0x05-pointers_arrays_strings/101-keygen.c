@@ -7,13 +7,15 @@
 int main(void)
 {
     char password[PASSWORD_LENGTH + 1];
+    const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
     int i;
 
     srand(time(NULL));
 
     for (i = 0; i < PASSWORD_LENGTH; i++)
     {
-        password[i] = rand() % 94 + 32; /* Generate random printable ASCII characters */
+        int index = rand() % (sizeof(charset) - 1);
+        password[i] = charset[index];
     }
 
     password[PASSWORD_LENGTH] = '\0';
