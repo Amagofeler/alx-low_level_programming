@@ -1,5 +1,5 @@
 /**
- * wildcmp - Compares two strings and returns 1 if identical, otherwise return 0.
+ * wildcmp - Compares two strings and returns 1 if identical, if not return 0.
  * @s1: First string to compare.
  * @s2: Second string to compare.
  *
