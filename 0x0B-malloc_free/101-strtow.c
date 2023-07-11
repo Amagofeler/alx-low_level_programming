@@ -2,6 +2,12 @@
 #include <string.h>
 #include "main.h"
 
+/**
+ * is_space - Checks if a character is a whitespace character
+ * @c: The character to check
+ *
+ * Return: 1 if the character is a whitespace character, 0 otherwise
+ */
 int is_space(char c)
 {
 return (c == ' ' || c == '\t' || c == '\n');
