@@ -13,23 +13,17 @@
 int *array_range(int min, int max)
 {
 int *arr;
-int size, i;
+int i;
 
-    /* Check if min is greater than max */
 if (min > max)
 return (NULL);
 
-    /* Calculate the size of the array */
-size = max - min + 1;
-
-    /* Allocate memory for the array */
-arr = malloc(size * sizeof(int));
+arr = malloc(sizeof(int) * (max - min + 1));
 if (arr == NULL)
 return (NULL);
 
-    /* Fill the array with values from min to max */
-for (i = 0; i < size; i++)
-arr[i] = min++;
+for (i = 0; i <= max - min; i++)
+arr[i] = min + i;
 
 return (arr);
 }
